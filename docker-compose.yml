@@ -1,0 +1,9 @@
+version: '3'
+services:
+  deploy:
+    build: .
+    volumes:
+     - $HOME/.ssh:/root/.ssh
+     - .:/deploy
+    stdin_open: true
+    tty: true
