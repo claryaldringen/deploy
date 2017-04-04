@@ -11,8 +11,8 @@ Possible parameters:
 Possible values of --project parameter:
 
  * cms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deploys CMS - shared part of all webs.
- * writer, backend&nbsp;&nbsp;Deploys CmsWriter - shared backend of all webs.
- * \<part of name>&nbsp;&nbsp;Deploys webs with \<part of name> in their names.
+ * writer, backend&nbsp;&nbsp;&nbsp;Deploys CmsWriter - shared backend of all webs.
+ * \<part of name>&nbsp;&nbsp;&nbsp;Deploys webs with \<part of name> in their names.
  * all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deploys all frontend webs.
 
 Example: 
