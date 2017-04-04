@@ -7,7 +7,17 @@ function rollback {
 }
 
 function showHelp {
-	echo "Run with -p param"
+	echo -e "Usage: ./deploy.sh <PARAMETER>"
+	echo -e "Deploy of CMS projects.\n"
+	echo -e "Possible parameters:"
+	echo -e "  --project, -p\t\tSets project to deploy."
+	echo -e "  --help, -h\t\tShows this help.\n"
+	echo -e "Possible values of --project parameter:"
+	echo -e "  cms\t\t\tDeploys CMS - shared part of all webs."
+	echo -e "  writer, backend\tDeploys CmsWriter - shared backend of all webs."
+	echo -e "  <part of name>\tDeploys webs with <part of name> in their names."
+	echo -e "  all\t\t\tDeploys all frontend webs.\n"
+	echo -e "Example: ./deploy.sh -p .cz\twill deploy all *.cz webs.\n"
 }
 
 function deploy {
