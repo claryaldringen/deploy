@@ -59,6 +59,7 @@ function deploy {
 		coffee -c $path/$dir.new
 		if [ $dir == "CmsWriter" ]; then
 			stylus --compress $path/$dir.new/htdocs/stylus/
+			(cd $path/CmsWriter/htdocs && bower install --allow-root)
 		fi
 
 		echo -e "\n\e[1mDeploying...\r"

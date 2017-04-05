@@ -11,7 +11,7 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt-get install -y \
 		nodejs
 
-RUN npm install -g coffee-script && npm install -g stylus
+RUN npm install -g coffee-script && npm install -g stylus && npm install -g bower
 
 WORKDIR /deploy
 
