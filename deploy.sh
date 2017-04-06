@@ -75,6 +75,11 @@ function deploy {
 			sed -i -e "s/\tpassword:/$password/g" $path/$dir/app/config/config.neon
 		fi
 
+		echo -e "Running postdeploy script..."
+		if [ -f $path/$dir/deploy.sh ]; then
+			.$path/$dir/deploy.sh
+		fi
+
 		echo -e "\n\e[1mTesting deployment...\e[21m"
 		www=$dir
 		if [ $www == "CMS" ]; then
